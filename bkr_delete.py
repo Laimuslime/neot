@@ -1,3 +1,4 @@
+import os
 import asyncio
 from datetime import datetime
 import json
@@ -18,6 +19,8 @@ from wikidot.util.parser import user as user_parser
 import yaml
 from httpx import ConnectError, ConnectTimeout
 
+if not os.path.exists("logs"):
+    os.makedirs("logs")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -619,10 +622,6 @@ def main():
         )
 
 if __name__ == "__main__":
-    import os
-    if not os.path.exists("logs"):
-        os.makedirs("logs")
-
     flag = 0
     while flag < 5:
         try:
