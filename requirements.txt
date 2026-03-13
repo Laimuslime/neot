@@ -1,0 +1,5 @@
+wikidot
+PyYAML
+httpx
+beautifulsoup4
+lxml
