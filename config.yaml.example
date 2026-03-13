@@ -6,8 +6,7 @@ password: ""
 siteUnixName: "backrooms-wiki-cn"
 # 职员用户名列表
 staffs:
-  - "BR_Bot"
-  - "Lupus Caeruleus"
+  - "Laimu_slime"
 # 其他站点id
 sites:
   - "backrooms-wiki"
